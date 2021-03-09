@@ -1,0 +1,87 @@
+
+h1,h2,h3,h4,h5,h6,p, li {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Tisa Sans Pro';
+}
+
+body {
+  background-color: #0f1b07;
+}
+
+#header {
+  background-color: #5c821a;
+  padding: 20px;
+}
+
+#contactDetails {
+  background-color: #5c821a;
+  padding: 20px;
+  text-align: center;
+}
+
+#contactDetails > h4 {
+  text-decoration: none;
+  margin:0.5%;
+}
+
+#contactDetails > a {
+    font-size: 18px;
+    font-weight: bolder;
+}
+#contactDetails > a:visited {
+    color: lightGray;
+}
+
+#linkedinLogo {
+  height:20px;
+  vertical-align:middle;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 0.333333;
+  margin: 1%;
+}
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.imageContainer > img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  background-color: green;
+  opacity:0.8;
+  font-size: 1.5vw;
+}
+
+.overlay > h2 {
+  color: white;
+  text-align: center;
+  margin: 1%;
+}
+
+.imageContainer:hover {
+  opacity:0.6;
+}
+
+/*
+other colors: #c6d166;#5c821a;
+*/

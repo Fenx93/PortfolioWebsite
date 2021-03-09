@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="\font\stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Physics Engine</title>
+</head>
+<body>
+  <h1>Physics Engine</h1>
+
+  <table>
+    <tr><td class="title">Project Status</td><td class="property">Ongoing</td></tr>
+    <tr><td class="title">Project Type</td><td class="property">University Coursework</td></tr>
+    <tr><td class="title">Software Used</td><td class="property">Visual Studio</td></tr>
+    <tr><td class="title">Languages Used</td><td class="property">C++</td></tr>
+    <tr><td class="title">Primary Role(s)</td><td class="property">Programmer</td></tr>
+  </table>
+
+<iframe class="embededVideo" width="560" height="315" src="https://www.youtube.com/embed/c9rLsLA5_F4" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+<div class="projectDescription">
+  <p>This is physics engine submited for a CSC3222 (Gaming Simulations). It has movement based on the Newtonian Dynamics (forces, velocities), collision detection (sphere with sphere, sphere with box, box with box) and physical collision response such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
+  <p>Its performance is optimised by using broadphase – quad tree nodes, where each node is divided into 4 nodes, if it contains more than 2 objects in it. It continues recursively, until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. Graphical representation of quad tree nodes are blue rectangles.</p>
+  <p>Additional optimisation is combining each ground or wall tile into a list of objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
+  <p>It is a first part of the coursework for this module, the second one adds AI, pathfinding and flocking.</p>
+</div>
+</body>
+</html>

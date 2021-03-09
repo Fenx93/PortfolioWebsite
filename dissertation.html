@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="\font\stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Final Year Project</title>
+</head>
+<body>
+  <h1>Final Year Project</h1>
+
+  <table>
+    <tr><td class="title">Project Status</td><td class="property">In Progress</td></tr>
+    <tr><td class="title">Project Type</td><td class="property">University Coursework</td></tr>
+    <tr><td class="title">Software Used</td><td class="property">Unity, GitHub, Visual Studio</td></tr>
+    <tr><td class="title">Languages Used</td><td class="property">C#</td></tr>
+    <tr><td class="title">Primary Role(s)</td><td class="property">Programmer</td></tr>
+  </table>
+
+  <iframe class="embededVideo" width="560" height="315" src="https://www.youtube.com/embed/RzKs3nItJc4"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+  <div class="projectDescription">
+    <p>This is a final year project for Stage 3 at the Newcastle University. The aim is to create a tool to procedurally generate coherent city that considers terrain and does zone planning.</p>
+    <p>At the moment terrain generation is complete. It uses noise and regions to create a 2d map, that is used when generating vertices for a 3D mesh.</p>
+    <p>City generation is done via the L-Systems – collection of symbols that recursively generates other collection based on a provided rule. Then this collection is resolved and translated into a required set of roads.</p>
+    <p>I have edited inspector in unity to be able to run generation without starting the application. Besides saving time it allows me to instantly see the changes applied to the generation algorithms as everything is re-generated automatically when any of the values were changed.</p>
+    <p>Next step will be the combination of terrain and map and addition of algorithms for this city to be generated in a specific way in a specific place – for example generate as close to the water source and resources as possible.</p>
+    <p>I am working on it at the moment.</p>
+  </div>
+</body>
+</html>

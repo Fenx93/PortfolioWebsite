@@ -4,10 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="\font\stylesheet.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>David Smirnov portfolio</title>
 </head>
 <body>
-  <h1>Hello World</h1>
-  <a href="index2.html">index2</a>
+  <h1>David Smirnov Portfolio</h1>
+  <p>Hi, I’m David, a graduating as a bachelor in Computer Science (Game Engineering with Industrial Placement) game developer. I’ve fallen in love with video games in my childhood and always wanted to create my own.
+  I am constantly following games industry news, playing and analysing various game genres to expand my knowledge base and be able to deliver best ideas.
+  </p>
+  <p>I am always willing to learn and try new things from the various fields (be it programming, design, engineering, history or music).</p>
+  <p> Here you can see some of the projects I’ve worked on in my free time or as a part of my coursework. </p>
+  <p> If you have any questions, feel free to contact me. </p>
+
+  <h1 id="header">University Coursework</h1>
+
+<div class="row">
+  <div class="column">
+    <a href="dissertation.html">
+      <div class="imageContainer">
+        <img src="\images\Dissertation 2D_2.jpg" alt="">
+        <div class="overlay">
+          <h2>City Generation for Final year Project</h2>
+        </div>
+      </div>
+    </a>
+    <p>Final year project that generates a city which considers important factors such as terrain to generate a believable European city.</p>
+    <ul>
+      <li><b>Unity, C#</b></li>
+      <li>In progress</li>
+      <li>ATM generates city in one scene and terrain in the other</li>
+      <li>City is generated via the L-Systems</li>
+      <li>Landscape is generated via the noise</li>
+      <li>Generated without launching Unity’s “play mode” and automatically re-generates if any of the generation properties were edited</li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <a href="physicsEngine.html">
+      <div class="imageContainer">
+        <img src="\images\Physics Engine_2.jpg" alt="">
+        <div class="overlay">
+          <h2>Physics Engine</h2>
+        </div>
+      </div>
+    </a>
+    <p>First part of the coursework for the Gaming Simulations module. Created physics engine that has movement based on the Newtonian Dynamics (forces, velocities) and colision detection (sphere/sphere, sphere/box, box/box).</p>
+    <ul>
+      <li><b>C++</b></li>
+      <li>Collision response via the calcullation of the impulse</li>
+      <li>Optimisation by using broadphase and narrow phase for collision resolution</li>
+      <li>Additional optimisation by transforming each ground and floor tile into a one large physical object with a collider</li>
+      <li>Second part with AI and Pathfinding is in progress</li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <a href="volcanoScene.html">
+      <div class="imageContainer">
+        <img src="images\VolcanoScene.png" alt="">
+        <div class="overlay">
+          <h2>Volcano Eruption Scene</h2>
+        </div>
+      </div>
+    </a>
+    <p>Developed as coursework for Graphics for Games module. Uses multiple features to create great looking alien planet.</p>
+    <ul>
+      <li><b>Unity, C#</b></li>
+      <li>Custom moving shaders for lava textures</li>
+      <li>Handmade volcano model in Blender3D</li>
+      <li>Use of particle system for smoke, lava bubbles and burning ashes</li>
+      <li>Use of Unity’s terrain tools for terrain</li>
+      <li>Optimisation techniques to ensure stable 60fps</li>
+      <li>Use of camera and scenes for smooth transit between environments</li>
+    </ul>
+  </div>
+</div>
+
+<h1 id="header">Personal Projects</h1>
+<div class="row">
+
+  <div class="column">
+    <a href="killerWave.html">
+      <div class="imageContainer">
+        <img src="\images\Vaporwave design 3.jpg" alt="">
+        <div class="overlay">
+          <h2>KillerWave</h2>
+        </div>
+      </div>
+    </a>
+      <p>This game was developed in one week for a Brackeys Game Jam 2021.1. It is a simple game for two players where players must survive countless enemy waves by destroying them with a line which is created only when players are close to each other.</p>
+      <ul>
+        <li>Unity, C#</li>
+        <li>Developed in one week</li>
+        <li>Simple graphics inspired by vaporwave and chillwave</li>
+        <li>6 different enemy types</li>
+        <li>Settings – music, sfx volume</li>
+      </ul>
+  </div>
+
+  <div class="column">
+    <a href="itinery.html">
+      <div class="imageContainer">
+        <img src="\images\itinery.png" alt="">
+        <div class="overlay">
+          <h2>Itinery</h2>
+        </div>
+      </div>
+    </a>
+    <div class="textContainer">
+      <p>This prototype has global map, dialogues, quests and tactical battles with elemental comboes. Currently is paused by the courseworks at the university.</p>
+      <ul>
+        <li>Unity, C#</li>
+        <li>Everything is drawn by myself – tried pixel art here</li>
+        <li>Originally developed for Android (check the UI)</li>
+        <li>Combat encounter maps can be easily created and modified</li>
+        <li>Entire dialogue system is loaded from a single text file</li>
+        <li>Has save/load system</li>
+        <li>Settings – music, sfx volume</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="column">
+    <a href="3_10.html">
+      <div class="imageContainer">
+      <img src="images\3_10.jpg" alt="">
+      <div class="overlay">
+        <h2>3/10</h2>
+      </div>
+    </div>
+    </a>
+    <div class="textContainer">
+      <p>Game where player makes hard decisions by dragging central square to the left or right.</p>
+      <ul>
+        <li>Unity, C#</li>
+        <li>Everything is drawn by myself – tried minimalism here</li>
+        <li>Is first project where I’ve implemented settings system – sound control, fullscreen and resolution</li>
+        <li>Easily editable dialogues and selected option consequences</li>
+        <li>Landscape is generated via the noise</li>
+        <li>Slavic fairy tales atmosphere</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+  <div id="contactDetails">
+    <h1>Contact Details</h1>
+    <h4>davidsmidik@gmail.com</h4>
+    <a href="https://www.linkedin.com/in/david-smirnov-798ab5151/">
+      <div>
+        <img id="linkedinLogo" src="\images\lin.png" alt="linkedin logo">
+        <span>My Linkedin</span>
+      </div>
+    </a>
+    <h4>+447849207142</h4>
+  </div>
+
 </body>
 </html>
