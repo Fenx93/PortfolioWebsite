@@ -1,15 +1,68 @@
 
-.projectDescription {
-  padding: 1%;
-  background-color: #5c821a;
-  max-width: 560px;
-  margin: auto;
-}
-
 h1{
   text-align: center;
 }
 
+#title {
+  color: #5c821a;
+}
+
+/* Blurred image background image properties */
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  /* Full height */
+  height: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#physicsBackground {
+  background-image: url("images/Physics_Engine_2.jpg");
+  filter: blur(4px);
+}
+
+/* Place content on top of the image */
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Dropdowns */
+.dropdowns {
+  padding: 1%;
+  background-color: #5c821a;
+  max-width: 840px;
+  margin: auto;
+  margin-bottom: 2.5%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.dropdown-header {
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  overflow: hidden;
+}
+
+/* Youtube video*/
 .embededVideo {
   display: block;
   margin: auto;
@@ -17,17 +70,28 @@ h1{
   border-style:none;
 }
 
-table {
-margin: auto;
-margin-bottom: 2.5%;
+/* Spec Table properties*/
+#specsTable {
+  background-color: #5c821a;
+  padding: 2%;
+  border-radius: 5px;
 }
 
-td{
+td {
   color:white;
   padding-left: 10px;
 }
 
-.title{
+.table-title {
   font-weight: bold;
   font-size: 20px;
+}
+
+.projectDescription {
+  padding: 1%;
+  background-color: #5c821a;
+  max-width: 840px;
+  margin: auto;
+  opacity: 0.9;
+  border-radius: 5px;
 }
