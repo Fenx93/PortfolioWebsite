@@ -10,14 +10,37 @@ body {
   background-color: #0f1b07;
 }
 
-#header {
+.header {
   background-color: #5c821a;
-  padding: 20px;
+  padding: 1%;
+  padding-left: 5%;
+}
+
+#navbar {
+  margin-left: 2.5%;
+  display: flex;
+}
+
+#navbar > a {
+  text-decoration: none;
+}
+#navbar > a > h3{
+  color: lightGray;
+}
+
+#intro {
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#text_highlight {
+  color: #5c821a;
 }
 
 #contactDetails {
   background-color: #5c821a;
-  padding: 20px;
+  padding: 1%;
   text-align: center;
 }
 
