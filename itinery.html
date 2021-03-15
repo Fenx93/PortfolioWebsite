@@ -10,36 +10,62 @@
   <title>Itinery</title>
 </head>
 <body>
-  <h1>Itinery</h1>
-
-  <table>
-    <tr><td class="title">Project Status</td><td class="property">Paused</td></tr>
-    <tr><td class="title">Project Type</td><td class="property">Personal</td></tr>
-    <tr><td class="title">Software Used</td><td class="property">Unity, GitHub, Photoshop CS6, Visual Studio</td></tr>
-    <tr><td class="title">Languages Used</td><td class="property">C#</td></tr>
-    <tr><td class="title">Primary Role(s)</td><td class="property">Game Designer, Programmer, Artist</td></tr>
-  </table>
-
-  <iframe class="embededVideo" width="560" height="315" src="https://www.youtube.com/embed/7hy9p19qHPU"
-   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
-
-  <div class="projectDescription">
-    <p>This is a prototype for a RPG, with tactical combat heavily inspired by “<a href="https://store.steampowered.com/app/590380/Into_the_Breach/">Into the Breach</a>“. The player is able to venture around the world, do various quests and participate in a global story by choosing various options in the dialogues.</p>
-    <p>All the art is drawn by myself, much need to be redone, but it is probably suitable for a prototype.</p>
-    <p>Gameplay is relatably simple – player needs to survive several turns, try to fulfill necessary objectives and protect civilians (people in cages in this level). Each turn enemies spawn in, move and prepare their attacks (which player can see and use for their advantage). Then the player can move his characters and use their skills.</p>
-    <p>Currently skills are simple attacks (melee, ranged and ranged that flies over the obstacles) that push objects. I want to add elemens-based interaction poison attack poison water, fire explodes when touching oil, fire is extinguished by water <a href="https://youtu.be/lqkFIqpSSqg?t=44">etc</a>.</p>
-    <p>Initially I was developing it for the mobiles, so UI became a bit overcrowded. </p>
+  <div id="navbar">
+    <a href="./"><h1>David Smirnov Portfolio</h1></a>
+    <h1 id="dissertation-title">Itinery</h1>
   </div>
 
-  <div class="projectDescription">
-    <p>Map is easily editable – level object is created, then ground tiles (like water, mountains or grass) can be dragged into appropriate locations. To ease this, “most common ground” fills entire ground with the selected tile. The user can add Board decorations (such as bushes) and Board Objects (like enemies, trees or rocks). Each level can have unique music and ambient sound (also drag & drop).</p>
-    <p>I have also implemented simple save/load system which keeps autosave points (for example, when a player has picked certain option in a dialogue or after a combat encounter has finished).</p>
-  </div>
-  <div class="projectDescription">
-    <p>As I have mentioned, the game consists of two parts – tactical combat and world exploration. At this point, player can move between several cities and villages, do quests (marked temporarily as circles), buy new weapons, hire new heroes and learn skills in the cities.</p>
-    <p>Speaking about quests and dialogues – each quest/dialogue is stored in a text file, and special tags like r/c/sv tell the program how to respond – load next character’s phrase, start combat, give something to a player.</p>
+  <div id="itinery-background" class="background"></div>
+
+  <div class="content">
+    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/7hy9p19qHPU" style="padding-top: 2.5%" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <div class="dropdowns" id="itinery-dropdowns">
+      <button type="button" class="dropdown-header">Specs</button>
+      <div class="dropdown-content">
+        <table id="specsTable">
+          <tr><td class="table-title">Project Status</td><td class="table-property">Paused</td></tr>
+          <tr><td class="table-title">Project Type</td><td class="table-property">Personal</td></tr>
+          <tr><td class="table-title">Software Used</td><td class="table-property">Unity, GitHub, Photoshop CS6, Visual Studio</td></tr>
+          <tr><td class="table-title">Languages Used</td><td class="table-property">C#</td></tr>
+          <tr><td class="table-title">Primary Role(s)</td><td class="table-property">Game Designer, Programmer, Artist</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="dropdowns" id="itinery-dropdowns">
+      <button type="button" class="dropdown-header">Information</button>
+      <div class="dropdown-content">
+        <p>This is a prototype for a <span>RPG, with tactical combat</span> inspired by “<a href="https://store.steampowered.com/app/590380/Into_the_Breach/">Into the Breach</a>“. The player <span>travels around the world</span>, <span>completes various quests</span> and <span>participates in a global story</span> by choosing various options in the dialogues.</p>
+        <p>All the art <span>was drawn by myself</span>, much need to be redone, but it is probably suitable for a prototype.</p>
+        <p>Gameplay is relatably simple – player needs to <span>survive several turns</span>, try to <span>fulfill necessary objectives</span> and <span>protect civilians</span> (people in cages in this level). Each turn enemies spawn in, move and prepare their attacks (which player can see and use for their advantage). Then the player can move his characters and use their skills.</p>
+        <p>Currently skills are simple attacks (melee, ranged and ranged that flies over the obstacles) that <span>push objects</span>. I want to add <span>elements-based interaction</span>: poison attack poisons water, fire explodes when touching oil, fire is extinguished by water <a href="https://youtu.be/lqkFIqpSSqg?t=44">etc</a>.</p>
+        <p>Initially I was developing it for the mobiles, so UI became a bit overcrowded. </p>
+      </div>
+    </div>
+    <div class="dropdowns" id="itinery-dropdowns">
+      <button type="button" class="dropdown-header">Levels and AutoSave System</button>
+      <div class="dropdown-content">
+        <p><span>Map is easily editable</span> – level object is created, then ground tiles (like water, mountains or grass) can be dragged into appropriate locations. To ease this, <span>“most common ground” fills entire ground</span> with the selected tile. The user can add Board decorations (such as bushes) and Board Objects (like enemies, trees or rocks). Each level can have unique music and ambient sound (also drag & drop).</p>
+        <p>I have also implemented simple <span>save/load system</span> which creates autosave points (for example, when a player has picked certain option in a dialogue or after a combat encounter has finished).</p>
+        <img src="images/levelSetup.png" alt="level editor">
+      </div>
+    </div>
+    <div class="dropdowns" id="itinery-dropdowns">
+      <button type="button" class="dropdown-header">World Exploration</button>
+      <div class="dropdown-content">
+        <p>As I have mentioned, the game consists of two parts – <span>tactical combat</span> and <span>world exploration</span>.
+          At this moment, player can <span>move between several cities and villages</span>, <span>do quests</span> (marked temporarily as circles), buy <span>new weapons</span>, hire <span>new heroes</span> and <span>learn skills in the cities</span>.</p>
+        <img src="images/worldMap.png" alt="World Map">
+        <p>Speaking about quests and dialogues – each quest/dialogue is <span>stored in a text file</span>, and special tags like <span>r/c/sv</span> tell the program how to respond – <span>load next character’s phrase/ start combat/ give something to a player</span>.</p>
+        <img src="images/dialogueFile.png" alt="Dialogue File">
+      </div>
+    </div>
+
   </div>
 
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

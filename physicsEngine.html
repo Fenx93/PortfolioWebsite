@@ -13,7 +13,7 @@
 <body >
   <div id="navbar">
     <a href="./"><h1>David Smirnov Portfolio</h1></a>
-    <h1 id="title">Physics Engine</h1>
+    <h1 id="engine-title">Physics Engine</h1>
   </div>
 
   <div id="physicsBackground" class="background"></div>
@@ -23,7 +23,7 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
-    <div class="dropdowns">
+    <div class="dropdowns" id="engine-dropdowns">
       <button type="button" class="dropdown-header">Specs</button>
       <div class="dropdown-content">
         <table id="specsTable">
@@ -36,36 +36,18 @@
       </div>
     </div>
 
-    <div class="dropdowns">
+    <div class="dropdowns" id="engine-dropdowns">
       <button type="button" class="dropdown-header">Information</button>
       <div class="dropdown-content">
-        <p>This is physics engine submited for a CSC3222 (Gaming Simulations). It has movement based on the Newtonian Dynamics (forces, velocities), collision detection (sphere with sphere, sphere with box, box with box) and physical collision response such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
-        <p>Its performance is optimised by using broadphase – quad tree nodes, where each node is divided into 4 nodes, if it contains more than 2 objects in it. It continues recursively, until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. Graphical representation of quad tree nodes are blue rectangles.</p>
-        <p>Additional optimisation is combining each ground or wall tile into a list of objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
-        <p>It is a first part of the coursework for this module, the second one adds AI, pathfinding and flocking.</p>
+        <p>This is a <span>physics engine</span> submited for a CSC3222 (Gaming Simulations) module. It has movement based on the <span>Newtonian Dynamics</span> (forces, velocities), <span>collision detection</span> (sphere with sphere, sphere with box, box with box) and <span>physical collision response</span> such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
+        <p>Its performance is <span>optimised by broadphase</span> – quad tree nodes, where each node is divided into 4 nodes if it contains more than 2 objects in it. It continues recursively until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if a low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. <span>Graphical representation of the broadphase are blue rectangles.</span></p>
+        <p><span>Additional optimisation</span> is achieved by combining every ground or wall tile into a list of large objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
+        <p>It is a first part of the coursework for this module, the second one adds <span>AI, pathfinding and flocking</span>.</p>
       </div>
     </div>
 
   </div>
 
-  <script type="text/javascript">
-    var coll = document.getElementsByClassName("dropdown-header");
-    var backgroundImage = document.getElementsByClassName("background");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-          backgroundImage.style.height = "120%";
-        } else {
-          content.style.display = "block";
-          backgroundImage.style.height = "140%";
-        }
-      });
-    }
-  </script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

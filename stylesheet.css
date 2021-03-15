@@ -1,11 +1,14 @@
 
-h1{
-  text-align: center;
-}
+h1 { text-align: center; }
 
-#title {
-  color: #5c821a;
-}
+body { background-color: black; }
+
+#engine-title { color: #5c821a; }
+#killerwave-title { color: #f52ca5; }
+#volcano-title { color: #ff3300; }
+#dissertation-title { color: #00a6ff; }
+#itinery-title { color: #00a6ff; }
+#three_ten-title { color: #2e0aad; }
 
 /* Blurred image background image properties */
 .background {
@@ -19,12 +22,15 @@ h1{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-#physicsBackground {
-  background-image: url("images/Physics_Engine_2.jpg");
   filter: blur(4px);
 }
+
+#physicsBackground { background-image: url("images/Physics_Engine_2.jpg"); }
+#killerwave-background { background-image: url("images/Vaporwave_design_3.jpg"); }
+#volcano-background { background-image: url("images/VolcanoScene.png"); }
+#dissertation-background { background-image: url("images/Dissertation_2D_2.jpg"); }
+#itinery-background { background-image: url("images/itinery.png"); }
+#three_ten-background { background-image: url("images/3_10.jpg"); }
 
 /* Place content on top of the image */
 .content {
@@ -37,13 +43,30 @@ h1{
 /* Dropdowns */
 .dropdowns {
   padding: 1%;
-  background-color: #5c821a;
   max-width: 840px;
   margin: auto;
   margin-bottom: 2.5%;
   opacity: 0.9;
   border-radius: 5px;
 }
+
+#engine-dropdowns { background-color: #5c821a; }
+#kw-dropdowns { background-color: #f52ca5; }
+#volcano-dropdowns { background-color: #ff3300; }
+#dissertation-dropdowns { background-color: #00a6ff; }
+#itinery-dropdowns { background-color: #00a6ff; }
+#three_ten-dropdowns { background-color: #1a075e; }
+
+/* Span Color highlights */
+#engine-dropdowns > .dropdown-content > p > span{ color: #0f1b07; }
+#kw-dropdowns > .dropdown-content > p > span{color: #3ae6f2; }
+#volcano-dropdowns > .dropdown-content > p > span{color: #ffbb1c; }
+#dissertation-dropdowns > .dropdown-content > p > span{color: #0c646e; }
+#itinery-dropdowns > .dropdown-content > p > span{color: #0c646e; }
+#three_ten-dropdowns > .dropdown-content > p > span{color: #f500ab; }
+
+#three_ten-dropdowns > .dropdown-content > p > a{color: #f500ab; }
+#volcano-dropdowns > .dropdown-content > p > a{color: #ffbb1c; }
 
 .dropdown-header {
   background-color: inherit;
@@ -72,7 +95,6 @@ h1{
 
 /* Spec Table properties*/
 #specsTable {
-  background-color: #5c821a;
   padding: 2%;
   border-radius: 5px;
 }
@@ -85,13 +107,4 @@ td {
 .table-title {
   font-weight: bold;
   font-size: 20px;
-}
-
-.projectDescription {
-  padding: 1%;
-  background-color: #5c821a;
-  max-width: 840px;
-  margin: auto;
-  opacity: 0.9;
-  border-radius: 5px;
 }

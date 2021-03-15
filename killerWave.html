@@ -10,25 +10,44 @@
   <title>KillerWave</title>
 </head>
 <body>
-  <h1>KillerWave</h1>
-
-  <table>
-    <tr><td class="title">Project Status</td><td class="property">Finished</td></tr>
-    <tr><td class="title">Project Type</td><td class="property">Personal</td></tr>
-    <tr><td class="title">Software Used</td><td class="property">Unity, GitHub, Photoshop CS6, Visual Studio</td></tr>
-    <tr><td class="title">Languages Used</td><td class="property">C#</td></tr>
-    <tr><td class="title">Primary Role(s)</td><td class="property">Game Designer, Programmer, Designer</td></tr>
-  </table>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rNf2HIwZQjk"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-   allowfullscreen></iframe>
-  <div class="projectDescription">
-    <p>This is game submited for a <a href="https://itch.io/jam/brackeys-5">Brackeys Game Jam 2021</a>. This two-players game was developed in a week.</p>
-    <p>Playable at https://fenx93.github.io/CSC3224Game/. Recommend using fullscreen.</p>
-    <p>This is a two-players game that focuses the idea “Strong Together”. As name suggests, when being relatively close to each other the players create a line that can damage and destroy enemies. </p>
-    <p>Initially it had “<a href="https://github.com/staffantan/unity-vhsglitch">VHS Glitch</a>” effect which looked cool, but was a bit too distracting.</p>
-    <p>Soundtrack was created by my friend William Wiazinin.</p>
+  <div id="navbar">
+    <a href="./"><h1>David Smirnov Portfolio</h1></a>
+    <h1 id="killerwave-title">KillerWave</h1>
   </div>
-</body>
+
+  <div id="killerwave-background" class="background"></div>
+
+  <div class="content">
+    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/rNf2HIwZQjk" style="padding-top: 2.5%" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <div class="dropdowns" id="kw-dropdowns">
+      <button type="button" class="dropdown-header">Specs</button>
+      <div class="dropdown-content">
+        <table id="specsTable">
+          <tr><td class="table-title">Project Status</td><td class="table-property">Finished</td></tr>
+          <tr><td class="table-title">Project Type</td><td class="table-property">Personal Project</td></tr>
+          <tr><td class="table-title">Software Used</td><td class="table-property">Unity, GitHub, Photoshop CS6, Visual Studio</td></tr>
+          <tr><td class="table-title">Languages Used</td><td class="table-property">C#</td></tr>
+          <tr><td class="table-title">Primary Role(s)</td><td class="table-property">Game Designer, Programmer, Designer</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="dropdowns" id="kw-dropdowns">
+      <button type="button" class="dropdown-header">Information</button>
+      <div class="dropdown-content">
+        <p>This is game submited for a <a href="https://itch.io/jam/brackeys-5">Brackeys Game Jam 2021</a>. This two-players game was developed <span>in a week</span>.</p>
+        <p>Playable at https://fenx93.github.io/CSC3224Game/. Recommend using fullscreen.</p>
+        <p>This is a two-players game that implements the idea <span>“Strong Together”</span>. As name suggests, when being relatively close to each other the players create a <span>line that can damage and destroy enemies</span>. </p>
+        <p>Initially it had “<a href="https://github.com/staffantan/unity-vhsglitch">VHS Glitch</a>” effect which looked cool, but was a bit too distracting.</p>
+        <p>Soundtrack was created by my friend <span>William Wiazinin</span>.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

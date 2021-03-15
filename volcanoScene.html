@@ -10,26 +10,46 @@
   <title>Volcano Scene</title>
 </head>
 <body>
-  <h1>Volcano Scene</h1>
 
-  <table>
-    <tr><td class="title">Project Status</td><td class="property">Finished</td></tr>
-    <tr><td class="title">Project Type</td><td class="property">University Coursework</td></tr>
-    <tr><td class="title">Software Used</td><td class="property">Unity 3D, Blender</td></tr>
-    <tr><td class="title">Languages Used</td><td class="property">C#, ShaderLab</td></tr>
-    <tr><td class="title">Primary Role(s)</td><td class="property">3D Graphics Designer</td></tr>
-  </table>
-
-  <iframe class="embededVideo" width="560" height="315" src="https://www.youtube.com/embed/aesb309yfq8"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
-  <div class="projectDescription">
-    <p>This is a coursework submitted for CSC3223(Graphics for Games). The requirement was to create a game scene with an alien planet that contains loads of various graphics and keep it at 60fps limit.</p>
-    <p>As I have worked with Blender(3D modelling software) previously, I have modelled a volcano myself.</p>
-    <p>Used particale system to create emitable smoke from the volcano, clouds, lava bubbles and burning ashes.</p>
-    <p>Used realistic textures and wrote few shaders for floating lava, lava bubbles and lava lakes.</p>
-    <p>Created custom skybox for the galaxy scene and added rotating planets with textures and custom shaders.</p>
-    <p>Added camera movement to create smooth transition from one scene to another.</p>
+  <div id="navbar">
+    <a href="./"><h1>David Smirnov Portfolio</h1></a>
+    <h1 id="volcano-title">Volcano Scene</h1>
   </div>
+
+  <div id="volcano-background" class="background"></div>
+
+  <div class="content">
+    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/aesb309yfq8" style="padding-top: 2.5%" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <div class="dropdowns" id="volcano-dropdowns">
+      <button type="button" class="dropdown-header">Specs</button>
+      <div class="dropdown-content">
+        <table id="specsTable">
+          <tr><td class="table-title">Project Status</td><td class="table-property">Finished</td></tr>
+          <tr><td class="table-title">Project Type</td><td class="table-property">University Coursework</td></tr>
+          <tr><td class="table-title">Software Used</td><td class="table-property">Unity 3D, Blender</td></tr>
+          <tr><td class="table-title">Languages Used</td><td class="table-property">C#, ShaderLab</td></tr>
+          <tr><td class="table-title">Primary Role(s)</td><td class="table-property">3D Graphics Designer</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="dropdowns" id="volcano-dropdowns">
+      <button type="button" class="dropdown-header">Information</button>
+      <div class="dropdown-content">
+        <p>This is a coursework submitted for the CSC3223(<span>Graphics for Games</span>) module. The requirement was to create a game scene with an alien planet that contains <span>loads of various graphics</span> and <span>keep it at 60fps</span> limit.</p>
+        <p>As I have worked with <a href="https://www.blender.org/-">Blender</a>(3D modelling software) previously, I have <span>3d-modelled a volcano myself</span>.</p>
+        <p>Used <span>particle systems</span> to create emitable smoke from the volcano, clouds, lava bubbles and burning ashes.</p>
+        <p>Used realistic textures and wrote few <span>shaders for floating lava, lava bubbles and lava lakes</span>.</p>
+        <p>Created <span>custom skybox</span> for the galaxy scene and added rotating planets with textures and custom shaders.</p>
+        <p>Added camera movement to create <span>smooth transition from one scene to another</span>.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
