@@ -58,15 +58,15 @@ body { background-color: black; }
 #three_ten-dropdowns { background-color: #1a075e; }
 
 /* Span Color highlights */
-#engine-dropdowns > .dropdown-content > p > span{ color: #0f1b07; }
-#kw-dropdowns > .dropdown-content > p > span{color: #3ae6f2; }
-#volcano-dropdowns > .dropdown-content > p > span{color: #ffbb1c; }
-#dissertation-dropdowns > .dropdown-content > p > span{color: #0c646e; }
-#itinery-dropdowns > .dropdown-content > p > span{color: #0c646e; }
-#three_ten-dropdowns > .dropdown-content > p > span{color: #f500ab; }
+#engine-dropdowns > .drop-content > p > span{ color: #0f1b07; }
+#kw-dropdowns > .drop-content > p > span{color: #3ae6f2; }
+#volcano-dropdowns > .drop-content > p > span{color: #ffbb1c; }
+#dissertation-dropdowns > .drop-content > p > span{color: #0c646e; }
+#itinery-dropdowns > .drop-content > p > span{color: #0c646e; }
+#three_ten-dropdowns > .drop-content > p > span{color: #f500ab; }
 
-#three_ten-dropdowns > .dropdown-content > p > a{color: #f500ab; }
-#volcano-dropdowns > .dropdown-content > p > a{color: #ffbb1c; }
+#three_ten-dropdowns > .drop-content > p > a{color: #f500ab; }
+#volcano-dropdowns > .drop-content > p > a{color: #ffbb1c; }
 
 .dropdown-header {
   background-color: inherit;
@@ -80,7 +80,7 @@ body { background-color: black; }
   font-weight: bold;
 }
 
-.dropdown-content {
+.drop-content {
   display: none;
   overflow: hidden;
 }
