@@ -27,7 +27,7 @@
       <button type="button" class="dropdown-header">Specs</button>
       <div class="drop-content">
         <table id="specsTable">
-          <tr><td class="table-title">Project Status</td><td class="table-property">In Progress</td></tr>
+          <tr><td class="table-title">Project Status</td><td class="table-property">Finished</td></tr>
           <tr><td class="table-title">Project Type</td><td class="table-property">University Coursework</td></tr>
           <tr><td class="table-title">Software Used</td><td class="table-property">Unity, GitHub, Visual Studio</td></tr>
           <tr><td class="table-title">Languages Used</td><td class="table-property">C#</td></tr>
@@ -37,14 +37,25 @@
     </div>
 
     <div class="dropdowns" id="dissertation-dropdowns">
-      <button type="button" class="dropdown-header">Information</button>
+      <button type="button" class="dropdown-header">Part 1 Information</button>
       <div class="drop-content">
         <p>This is a <span>final year project</span> for Stage 3 at the Newcastle University. The aim is to create a tool to <span>procedurally generate coherent city</span> that considers <span>terrain and does zone planning</span>.</p>
         <p>At the moment <span>terrain generation is complete</span>. It uses <span>noise and regions to create a 2d map</span>, that is used when generating vertices for a <span>3D mesh</span>.</p>
         <p>City generation is done via the <a href="https://en.wikipedia.org/wiki/L-system">L-Systems</a> – collection of symbols that <span>recursively generates</span> other collection based on a provided rule. Then this collection is resolved and translated into a <span>set of roads</span>.</p>
         <p>I have <span>edited inspector in Unity</span> to be able to <span>run generation without starting the application</span>. Besides saving time it allows me to <span>instantly see the changes applied</span> to the generation algorithms as everything is re-generated automatically when any of the values are changed.</p>
-        <p>Next step will be the <span>combination of terrain and map</span> and city creation in a specific way in a specific place – for example - building it as close to water source and resources as possible.</p>
-        <p>I am working on it <span>at the moment</span>.</p>
+      </div>
+    </div>
+
+    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/tNdMZvD6VcY" style="padding-top: 2.5%" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <div class="dropdowns" id="dissertation-dropdowns">
+      <button type="button" class="dropdown-header">Part 2 Information</button>
+      <div class="drop-content">
+        <p>Second part of this project was dedicated to generating city <span>on top of the previously generated landscape</span>.</p>
+        <p>L-Systems were used to generate two key parts of the city - <span>old city</span> and <span>modern city</span>. Walls were placed around the old city using <span>Graham's scan</span> algorithm.</p>
+        <p><span>Zoning</span> is used to create different districts for the modern city part. User can simply <span>upload any texture</span> which will be used to define 3 different areas: <span>industrial, commercial and residential</span>. Of course, user can select building types that belong to a particular zone, define their parameters and spawn rate.</p>
       </div>
     </div>
   </div>

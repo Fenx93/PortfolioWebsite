@@ -28,7 +28,7 @@
       <button type="button" class="dropdown-header">Specs</button>
       <div class="drop-content">
         <table id="specsTable">
-          <tr><td class="table-title">Project Status</td><td class="table-property">Ongoing</td></tr>
+          <tr><td class="table-title">Project Status</td><td class="table-property">Finished - has 2 submission parts</td></tr>
           <tr><td class="table-title">Project Type</td><td class="table-property">University Coursework</td></tr>
           <tr><td class="table-title">Software Used</td><td class="table-property">Visual Studio</td></tr>
           <tr><td class="table-title">Languages Used</td><td class="table-property">C++</td></tr>
@@ -38,12 +38,24 @@
     </div>
 
     <div class="dropdowns" id="engine-dropdowns">
-      <button type="button" class="dropdown-header">Information</button>
+      <button type="button" class="dropdown-header">First Part Information</button>
       <div class="drop-content">
         <p>This is a <span>physics engine</span> submited for a CSC3222 (Gaming Simulations) module. It has movement based on the <span>Newtonian Dynamics</span> (forces, velocities), <span>collision detection</span> (sphere with sphere, sphere with box, box with box) and <span>physical collision response</span> such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
         <p>Its performance is <span>optimised by broadphase</span> – quad tree nodes, where each node is divided into 4 nodes if it contains more than 2 objects in it. It continues recursively until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if a low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. <span>Graphical representation of the broadphase are blue rectangles.</span></p>
         <p><span>Additional optimisation</span> is achieved by combining every ground or wall tile into a list of large objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
         <p>It is a first part of the coursework for this module, the second one adds <span>AI, pathfinding and flocking</span>.</p>
+      </div>
+    </div>
+
+    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/txwYtKNHg7Y" style="padding-top: 2.5%" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <div class="dropdowns" id="engine-dropdowns">
+      <button type="button" class="dropdown-header">Second Part Information</button>
+      <div class="drop-content">
+        <p>The game is finished with <span>all the necessary gameplay features implemented</span>. The player can collect fruits to earn score points and can climb ladders and fall from platforms with the gravity force applied. The player can shoot a spell that stuns enemies.</p>
+        <p>Another key feature is game's AI. All enemies utilize complex state machine that allows a very expressive set of states - as everrything is encapsulated within calsses, its very easy to reuse the logic contained within them. <span>Pathfinding is implemented as the A* algorithm</span> that allows enemy to efficiently navigate throughout the level by considering various paths and making complex choices - for example, climbing the ladders up and dow or simply jumping from platform to platfrom. Finally, <span>flocking</span> is used to display a boid(multiple game entities moving as a single one) of pixies that moves towards the player.</p>
       </div>
     </div>
 
