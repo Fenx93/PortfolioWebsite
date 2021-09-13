@@ -6,6 +6,7 @@ body { background-color: black; }
 #engine-title { color: #5c821a; }
 #killerwave-title { color: #f52ca5; }
 #volcano-title { color: #ff3300; }
+#clashOfCats-title { color: #E7552C; }
 #dissertation-title { color: #00a6ff; }
 #itinery-title { color: #00a6ff; }
 #three_ten-title { color: #2e0aad; }
@@ -28,6 +29,7 @@ body { background-color: black; }
 #physicsBackground { background-image: url("images/Physics_Engine_2.jpg"); }
 #killerwave-background { background-image: url("images/Vaporwave_design_3.jpg"); }
 #volcano-background { background-image: url("images/VolcanoScene.png"); }
+#clashOfCats-background { background-image: url("images/3_2_Meow.jpg"); }
 #dissertation-background { background-image: url("images/Dissertation_2D_2.jpg"); }
 #itinery-background { background-image: url("images/itinery.png"); }
 #three_ten-background { background-image: url("images/3_10.jpg"); }
@@ -53,6 +55,7 @@ body { background-color: black; }
 #engine-dropdowns { background-color: #5c821a; }
 #kw-dropdowns { background-color: #f52ca5; }
 #volcano-dropdowns { background-color: #ff3300; }
+#clashOfCats-dropdowns { background-color: #FFB745; }
 #dissertation-dropdowns { background-color: #00a6ff; }
 #itinery-dropdowns { background-color: #00a6ff; }
 #three_ten-dropdowns { background-color: #1a075e; }
@@ -61,12 +64,14 @@ body { background-color: black; }
 #engine-dropdowns > .drop-content > p > span{ color: #0f1b07; }
 #kw-dropdowns > .drop-content > p > span{color: #3ae6f2; }
 #volcano-dropdowns > .drop-content > p > span{color: #ffbb1c; }
+#clashOfCats-dropdowns > .drop-content > p > span{color: #E7552C; }
 #dissertation-dropdowns > .drop-content > p > span{color: #0c646e; }
 #itinery-dropdowns > .drop-content > p > span{color: #0c646e; }
 #three_ten-dropdowns > .drop-content > p > span{color: #f500ab; }
 
 #three_ten-dropdowns > .drop-content > p > a{color: #f500ab; }
 #volcano-dropdowns > .drop-content > p > a{color: #ffbb1c; }
+#clashOfCats-dropdowns > .drop-content > p > a{color: #5CC5EF; }
 
 .dropdown-header {
   background-color: inherit;
