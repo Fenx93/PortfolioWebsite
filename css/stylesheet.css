@@ -5,7 +5,7 @@ body { background-color: black; }
 #engine-title { color: #5c821a; }
 #killerwave-title { color: #f52ca5; }
 #volcano-title { color: #ff3300; }
-#clashOfCats-title { color: #5CC5EF; }
+#clashOfCats-title { color: #25a8db; }
 #dissertation-title { color: #00a6ff; }
 #itinery-title { color: #00a6ff; }
 #threeTen-title { color: #461dd8; }
@@ -14,7 +14,7 @@ body { background-color: black; }
 #engine       ul li a:hover { color: #5c821a; }
 #killerWave   ul li a:hover { color: #f52ca5; }
 #volcano      ul li a:hover { color: #ff3300; }
-#clashOfCats  ul li a:hover { color: #5CC5EF; }
+#clashOfCats  ul li a:hover { color: #25a8db; }
 #dissertation ul li a:hover { color: #00a6ff; }
 #itinery      ul li a:hover { color: #00a6ff; }
 #threeTen    ul li a:hover { color: #461dd8; }
@@ -66,7 +66,7 @@ body { background-color: black; }
 #engine-dropdowns { background-color: #5c821a; }
 #kw-dropdowns { background-color: #f52ca5; }
 #volcano-dropdowns { background-color: #ff3300; }
-#clashOfCats-dropdowns { background-color: #5CC5EF; }
+#clashOfCats-dropdowns { background-color: #25a8db; }
 #dissertation-dropdowns { background-color: #00a6ff; }
 #itinery-dropdowns { background-color: #00a6ff; }
 #threeTen-dropdowns { background-color: #1a075e; }
@@ -75,7 +75,7 @@ body { background-color: black; }
 #engine-dropdowns       .drop-content p span{ color: #0f1b07; }
 #kw-dropdowns           .drop-content p span{color: #3ae6f2; }
 #volcano-dropdowns      .drop-content p span{color: #ffbb1c; }
-#clashOfCats-dropdowns  .drop-content p span{color: #E7552C; }
+#clashOfCats-dropdowns  .drop-content p span{color: #ff6439; }
 #dissertation-dropdowns .drop-content p span{color: #0c646e; }
 #itinery-dropdowns      .drop-content p span{color: #0c646e; }
 #threeTen-dropdowns    .drop-content p span{color: #f500ab; }
@@ -106,6 +106,7 @@ body { background-color: black; }
   display: block;
   margin: auto;
   margin-bottom: 2.5%;
+  padding-top: 2.5%;
   border-style:none;
 }
 
