@@ -6,25 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="images\feather.png" type="image/x-icon" />
   <link rel="stylesheet" href="\font\stylesheet.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
   <title>3/10</title>
 </head>
 <body>
-  <div id="navbar">
-    <a href="./"><h1>David Smirnov Portfolio</h1></a>
-    <h1 id="three_ten-title">3/10</h1>
-  </div>
+  <nav class="navbar" id="threeTen">
+    <ul>
+      <li id="threeTen-title"><b>3/10</b></li>
+      <li><a href="./index.html#intro">About Me</a></li>
+      <li class="dropdown">
+        <a href="./index.html#university_coursework">University Coursework</a>
+        <div class="dropdown-content">
+          <a href="dissertation.html">Final Year Project</a>
+          <a href="physicsEngine.html">Physics Engine</a>
+          <a href="volcanoScene.html">Volcano Scene</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="./index.html#personal_projects" class="dropbtn">Personal Projects</a>
+        <div class="dropdown-content">
+          <a href="killerWave.html">KillerWave</a>
+          <a href="itinery.html">Itinery</a>
+          <a href="3_10.html">3/10</a>
+          <a href="3_2_Meow.html">3 2 Meow!</a>
+        </div>
+      </li>
+      <li class="dropdown"><a href="./index.html#contactDetails">Contact Details</a></li>
+    </ul>
+  </nav>
 
-  <div id="three_ten-background" class="background"></div>
+  <div id="threeTen-background" class="background"></div>
 
   <div class="content">
     <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/G7M214Tz8Yw" style="padding-top: 2.5%" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
-    <div class="dropdowns" id="three_ten-dropdowns">
+    <div class="dropdowns" id="threeTen-dropdowns">
       <button type="button" class="dropdown-header">Specs</button>
+      <div class="drop-content">
         <table id="specsTable">
           <tr><td class="table-title">Project Status</td><td class="table-property">Paused</td></tr>
           <tr><td class="table-title">Project Type</td><td class="table-property">Personal Project</td></tr>
@@ -32,15 +53,18 @@
           <tr><td class="table-title">Languages Used</td><td class="table-property">C#</td></tr>
           <tr><td class="table-title">Primary Role(s)</td><td class="table-property">Game Designer, Programmer, Designer</td></tr>
         </table>
+      </div>
     </div>
 
-    <div class="dropdowns" id="three_ten-dropdowns">
+    <div class="dropdowns" id="threeTen-dropdowns">
       <button type="button" class="dropdown-header">Information</button>
-        <p>This is a <span>prototype for a text RPG</span>, inspired by “<a href="https://store.steampowered.com/app/474750/Reigns/">Reigns</a>“. The player is <span>constantly choosing between two options</span> to progress the story, fulfill various achievemnts and survive for as long as possible.</p>
+      <div class="drop-content">
+        <p>This is a <span>prototype for a text RPG</span>, inspired by “<a href="https://store.steampowered.com/app/474750/Reigns/">Reigns</a>“. The player is <span>constantly choosing between two options</span> to progress the story, fulfill various achievements and survive for as long as possible.</p>
         <p><span>Everything was drawn by myself</span> - tried minimalism here.</p>
         <p>Everything is <span>easily scalable</span>, so can be easily adopted for any platform.</p>
         <p>It is <span>inspired by slavic folk tales</span>, with characters like <a href="https://en.wikipedia.org/wiki/Koschei">Koschei the Deathless</a>, <a href="https://en.wikipedia.org/wiki/Firebird_(Slavic_folklore)">Firebird</a>, <a href="https://en.wikipedia.org/wiki/Leshy">Leshy</a> and <a href="https://en.wikipedia.org/wiki/Baba_Yaga">Baba Yaga</a>. Of course, some adaptation will be required, for example, changing russian “tsarevna” to “princess”.</p>
         <p><span>All the game mechanics are implemented</span>, only story requires finishing touches.</p>
+      </div>
     </div>
   </div>
 

@@ -6,59 +6,81 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="images\feather.png" type="image/x-icon" />
   <link rel="stylesheet" href="\font\stylesheet.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
   <title>Physics Engine</title>
 
 </head>
-<body >
-  <div id="navbar">
-    <a href="./"><h1>David Smirnov Portfolio</h1></a>
-    <h1 id="engine-title">Physics Engine</h1>
-  </div>
+<body>
+  <div class="container">
+    <nav class="navbar" id="engine">
+      <ul>
+        <li id="engine-title"><b>Physics Engine</b></li>
+        <li><a href="./index.html#intro">About Me</a></li>
+        <li class="dropdown">
+          <a href="./index.html#university_coursework">University Coursework</a>
+          <div class="dropdown-content" id="engine-dropdowns">
+            <a href="dissertation.html">Final Year Project</a>
+            <a href="physicsEngine.html">Physics Engine</a>
+            <a href="volcanoScene.html">Volcano Scene</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="./index.html#personal_projects" class="dropbtn">Personal Projects</a>
+          <div class="dropdown-content" id="engine-dropdowns">
+            <a href="killerWave.html">KillerWave</a>
+            <a href="itinery.html">Itinery</a>
+            <a href="3_10.html">3/10</a>
+            <a href="3_2_Meow.html">3 2 Meow!</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="./index.html#contactDetails">Contact Details</a></li>
+      </ul>
+    </nav>
+  
+    <div id="physicsBackground" class="background"></div>
 
-  <div id="physicsBackground" class="background"></div>
+    <div class="content">
+      <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/c9rLsLA5_F4" style="padding-top: 2.5%" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
-  <div class="content">
-    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/c9rLsLA5_F4" style="padding-top: 2.5%" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-
-    <div class="dropdowns" id="engine-dropdowns">
-      <button type="button" class="dropdown-header">Specs</button>
-      <div class="drop-content">
-        <table id="specsTable">
-          <tr><td class="table-title">Project Status</td><td class="table-property">Finished - has 2 submission parts</td></tr>
-          <tr><td class="table-title">Project Type</td><td class="table-property">University Coursework</td></tr>
-          <tr><td class="table-title">Software Used</td><td class="table-property">Visual Studio</td></tr>
-          <tr><td class="table-title">Languages Used</td><td class="table-property">C++</td></tr>
-          <tr><td class="table-title">Primary Role(s)</td><td class="table-property">Programmer</td></tr>
-        </table>
+      <div class="dropdowns" id="engine-dropdowns">
+        <button type="button" class="dropdown-header">Specs</button>
+        <div class="drop-content">
+          <table id="specsTable">
+            <tr><td class="table-title">Project Status</td><td class="table-property">Finished - has 2 submission parts</td></tr>
+            <tr><td class="table-title">Project Type</td><td class="table-property">University Coursework</td></tr>
+            <tr><td class="table-title">Software Used</td><td class="table-property">Visual Studio</td></tr>
+            <tr><td class="table-title">Languages Used</td><td class="table-property">C++</td></tr>
+            <tr><td class="table-title">Primary Role(s)</td><td class="table-property">Programmer</td></tr>
+          </table>
+        </div>
       </div>
-    </div>
 
-    <div class="dropdowns" id="engine-dropdowns">
-      <button type="button" class="dropdown-header">First Part Information</button>
-      <div class="drop-content">
-        <p>This is a <span>physics engine</span> submited for a CSC3222 (Gaming Simulations) module. It has movement based on the <span>Newtonian Dynamics</span> (forces, velocities), <span>collision detection</span> (sphere with sphere, sphere with box, box with box) and <span>physical collision response</span> such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
-        <p>Its performance is <span>optimised by broadphase</span> – quad tree nodes, where each node is divided into 4 nodes if it contains more than 2 objects in it. It continues recursively until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if a low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. <span>Graphical representation of the broadphase are blue rectangles.</span></p>
-        <p><span>Additional optimisation</span> is achieved by combining every ground or wall tile into a list of large objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
-        <p>It is a first part of the coursework for this module, the second one adds <span>AI, pathfinding and flocking</span>.</p>
+      <div class="dropdowns" id="engine-dropdowns">
+        <button type="button" class="dropdown-header">First Part Information</button>
+        <div class="drop-content">
+          <p>This is a <span>physics engine</span> submited for a CSC3222 (Gaming Simulations) module. It has movement based on the <span>Newtonian Dynamics</span> (forces, velocities), <span>collision detection</span> (sphere with sphere, sphere with box, box with box) and <span>physical collision response</span> such as impulse(the object is pushed back, preventing it from exiting the game area). </p>
+          <p>Its performance is <span>optimised by broadphase</span> – quad tree nodes, where each node is divided into 4 nodes if it contains more than 2 objects in it. It continues recursively until a certain treshold is reached. Physics engine checks for collisions (happens each frame) by seeing if a low-level node has more than 1 object within. Then narrowphase checks these objects for a collision. <span>Graphical representation of the broadphase are blue rectangles.</span></p>
+          <p><span>Additional optimisation</span> is achieved by combining every ground or wall tile into a list of large objects – graphically represented by red rectangles. It transforms over a hundred separate objects into several big ones, so the performance is increased drasctically.</p>
+          <p>It is a first part of the coursework for this module, the second one adds <span>AI, pathfinding and flocking</span>.</p>
+        </div>
       </div>
-    </div>
 
-    <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/txwYtKNHg7Y" style="padding-top: 2.5%" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+      <iframe class="embededVideo" width="840" height="472.5" src="https://www.youtube.com/embed/txwYtKNHg7Y" style="padding-top: 2.5%" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
-    <div class="dropdowns" id="engine-dropdowns">
-      <button type="button" class="dropdown-header">Second Part Information</button>
-      <div class="drop-content">
-        <p>The game is finished with <span>all the necessary gameplay features implemented</span>. The player can collect fruits to earn score points and can climb ladders and fall from platforms with the gravity force applied. The player can shoot a spell that stuns enemies.</p>
-        <p>Another key feature is game's AI. All enemies utilize complex state machine that allows a very expressive set of states - as everrything is encapsulated within calsses, its very easy to reuse the logic contained within them. <span>Pathfinding is implemented as the A* algorithm</span> that allows enemy to efficiently navigate throughout the level by considering various paths and making complex choices - for example, climbing the ladders up and dow or simply jumping from platform to platfrom. Finally, <span>flocking</span> is used to display a boid(multiple game entities moving as a single one) of pixies that moves towards the player.</p>
+      <div class="dropdowns" id="engine-dropdowns">
+        <button type="button" class="dropdown-header">Second Part Information</button>
+        <div class="drop-content">
+          <p>The game is finished with <span>all the necessary gameplay features implemented</span>. The player can collect fruits to earn score points and can climb ladders and fall from platforms with the gravity force applied. The player can shoot a spell that stuns enemies.</p>
+          <p>Another key feature is game's AI. All enemies utilize complex state machine that allows a very expressive set of states - as everrything is encapsulated within calsses, its very easy to reuse the logic contained within them. <span>Pathfinding is implemented as the A* algorithm</span> that allows enemy to efficiently navigate throughout the level by considering various paths and making complex choices - for example, climbing the ladders up and dow or simply jumping from platform to platfrom. Finally, <span>flocking</span> is used to display a boid(multiple game entities moving as a single one) of pixies that moves towards the player.</p>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
   <script type="text/javascript" src="script.js"></script>

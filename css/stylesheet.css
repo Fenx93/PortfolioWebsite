@@ -1,0 +1,126 @@
+h1 { text-align: center; }
+
+body { background-color: black; }
+
+#engine-title { color: #5c821a; }
+#killerwave-title { color: #f52ca5; }
+#volcano-title { color: #ff3300; }
+#clashOfCats-title { color: #5CC5EF; }
+#dissertation-title { color: #00a6ff; }
+#itinery-title { color: #00a6ff; }
+#threeTen-title { color: #461dd8; }
+
+
+#engine       ul li a:hover { color: #5c821a; }
+#killerWave   ul li a:hover { color: #f52ca5; }
+#volcano      ul li a:hover { color: #ff3300; }
+#clashOfCats  ul li a:hover { color: #5CC5EF; }
+#dissertation ul li a:hover { color: #00a6ff; }
+#itinery      ul li a:hover { color: #00a6ff; }
+#threeTen    ul li a:hover { color: #461dd8; }
+
+/* Blurred image background image properties */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  /* Full height */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+#physicsBackground { background-image: url("../images/Physics_Engine_2.jpg"); }
+#killerwave-background { background-image: url("../images/Vaporwave_design_3.jpg"); }
+#volcano-background { background-image: url("../images/VolcanoScene.png"); }
+#clashOfCats-background { background-image: url("../images/32Meow.jpg"); }
+#dissertation-background { background-image: url("../images/Dissertation_2D_2.jpg"); }
+#itinery-background { background-image: url("../images/itinery.png"); }
+#threeTen-background { background-image: url("../images/3_10.jpg"); }
+
+/* Place content on top of the image */
+.content {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Dropdowns */
+.dropdowns {
+  padding: 1%;
+  max-width: 840px;
+  margin: auto;
+  margin-bottom: 2.5%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+#engine-dropdowns { background-color: #5c821a; }
+#kw-dropdowns { background-color: #f52ca5; }
+#volcano-dropdowns { background-color: #ff3300; }
+#clashOfCats-dropdowns { background-color: #5CC5EF; }
+#dissertation-dropdowns { background-color: #00a6ff; }
+#itinery-dropdowns { background-color: #00a6ff; }
+#threeTen-dropdowns { background-color: #1a075e; }
+
+/* Span Color highlights */
+#engine-dropdowns       .drop-content p span{ color: #0f1b07; }
+#kw-dropdowns           .drop-content p span{color: #3ae6f2; }
+#volcano-dropdowns      .drop-content p span{color: #ffbb1c; }
+#clashOfCats-dropdowns  .drop-content p span{color: #E7552C; }
+#dissertation-dropdowns .drop-content p span{color: #0c646e; }
+#itinery-dropdowns      .drop-content p span{color: #0c646e; }
+#threeTen-dropdowns    .drop-content p span{color: #f500ab; }
+
+#threeTen-dropdowns    .drop-content p a{color: #f500ab; }
+#volcano-dropdowns      .drop-content p a{color: #ffbb1c; }
+#clashOfCats-dropdowns  .drop-content p a{color: #FFB745; }
+
+.dropdown-header {
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.drop-content {
+  display: none;
+  overflow: hidden;
+}
+
+/* Youtube video*/
+.embededVideo {
+  display: block;
+  margin: auto;
+  margin-bottom: 2.5%;
+  border-style:none;
+}
+
+/* Spec Table properties*/
+#specsTable {
+  padding: 2%;
+  border-radius: 5px;
+}
+
+td {
+  color:white;
+  padding-left: 10px;
+}
+
+.table-title {
+  font-weight: bold;
+  font-size: 20px;
+}

@@ -6,222 +6,223 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="images\feather.png" type="image/x-icon" />
   <link rel="stylesheet" href="\font\stylesheet.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>David Smirnov portfolio</title>
 </head>
 <body>
-  <div id="navbar">
-    <a href="./"><h1>David Smirnov Portfolio</h1></a>
-
-    <div class="dropdown"> <a href="#intro" class="dropbtn"><h3>About Me</h3></a> </div>
-
-    <div class="dropdown">
-      <a href="#university_coursework" class="dropbtn"><h3>University Coursework</h3></a>
-      <div class="dropdown-content">
-        <a href="dissertation.html">Final Year Project</a>
-        <a href="physicsEngine.html">Physics Engine</a>
-        <a href="volcanoScene.html">Volcano Scene</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <a href="#personal_projects" class="dropbtn"><h3>Personal Projects</h3></a>
-      <div class="dropdown-content">
-        <a href="killerWave.html">KillerWave</a>
-        <a href="itinery.html">Itinery</a>
-        <a href="3_10.html">3/10</a>
-        <a href="3_2_Meow.html">3..2..Meow!</a>
-      </div>
-    </div>
-
-    <div class="dropdown"> <a href="#contactDetails" class="dropbtn"><h3>Contact Details</h3></a> </div>
-
-  </div>
-
-  <h1 class="header" id="university_coursework">About Me</h1>
-
-  <div id="intro">
-    <h3>Hi, I’m <span id="text_highlight">David</span>, a game developer graduating as a <span id="text_highlight">bachelor in Computer Science</span> (Game Engineering with Industrial Placement). I’ve fallen in love with video games in my childhood and always wanted to create my own.
-    I am <span id="text_highlight">constantly following games industry</span> news, playing and <span id="text_highlight">analysing various game genres</span> to expand my knowledge base and be able to <span id="text_highlight">deliver best ideas</span>.
-    </h3>
-    <h3>I am <span id="text_highlight">always willing to learn</span> and try new things from various fields (be it programming, design, engineering, history or music).</h3>
-    <h3> Here you can see some of the <span id="text_highlight">projects I’ve worked on</span> in my free time or as a part of my coursework. To see more information about the project <span id="text_highlight">you can click on it.</span></h3>
-    <h3> If you have any questions, <span id="text_highlight">feel free to contact me.</span> </h3>
-  </div>
-
-  <h1 class="header" id="university_coursework">University Coursework</h1>
-
-  <div class="row">
-  <div class="column">
-    <a href="dissertation.html">
-      <div class="imageContainer">
-        <img src="images\Dissertation_2D_2.jpg" alt="">
-        <div class="overlay">
-          <h2>City Generation for Final year Project</h2>
-        </div>
-      </div>
-    </a>
-    <p>Final year project that generates a city which considers important factors such as terrain to generate a believable European city.</p>
-    <ul>
-      <li><b>Unity, C#</b></li>
-      <li>In progress</li>
-      <li>Currently generates city in one scene and terrain in the other</li>
-      <li>City is generated via L-Systems</li>
-      <li>Landscape is generated via noise</li>
-      <li>Generated without launching Unity’s “play mode” and automatically re-generates if any of the generation properties were edited</li>
-    </ul>
-  </div>
-
-  <div class="column">
-    <a href="physicsEngine.html">
-      <div class="imageContainer">
-        <img src="images\Physics_Engine_2.jpg" alt="">
-        <div class="overlay">
-          <h2>Physics Engine</h2>
-        </div>
-      </div>
-    </a>
-    <p>First part of the coursework for the Gaming Simulations module. Created physics engine that has movement based on the Newtonian Dynamics (forces, velocities) and colision detection (sphere/sphere, sphere/box, box/box).</p>
-    <ul>
-      <li><b>C++</b></li>
-      <li>Collision response via calcullation of the impulse</li>
-      <li>Optimisation by using broadphase and narrow phase for collision resolution</li>
-      <li>Additional optimisation by transforming each ground and floor tile into a one large physical object with a collider</li>
-      <li>Second part with AI and Pathfinding is in progress</li>
-    </ul>
-  </div>
-
-  <div class="column">
-    <a href="volcanoScene.html">
-      <div class="imageContainer">
-        <img src="images\VolcanoScene.png" alt="">
-        <div class="overlay">
-          <h2>Volcano Eruption Scene</h2>
-        </div>
-      </div>
-    </a>
-    <p>Developed as coursework for the Graphics for Games module. Uses multiple features to create a good looking alien planet.</p>
-    <ul>
-      <li><b>Unity, C#</b></li>
-      <li>Custom moving shaders for lava textures</li>
-      <li>Handmade volcano model in Blender3D</li>
-      <li>Use of particle systems for smoke, lava bubbles and burning ashes</li>
-      <li>Use of Unity’s terrain tools for terrain</li>
-      <li>Optimisation techniques to ensure stable 60fps</li>
-      <li>Use of camera and scenes for smooth transit between environments</li>
-    </ul>
-  </div>
-</div>
-
-  <h1 class="header" id="personal_projects">Personal Projects</h1>
-  <div class="row">
-
-  <div class="column">
-    <a href="killerWave.html">
-      <div class="imageContainer">
-        <img src="images\Vaporwave_design_3.jpg" alt="">
-        <div class="overlay">
-          <h2>KillerWave</h2>
-        </div>
-      </div>
-    </a>
-      <p>This game was developed in one week for a Brackeys Game Jam 2021.1. It is a simple game for two players where players must survive countless enemy waves by destroying them with a line which is created only when players are close to each other.</p>
+  <div class="container">
+    <nav class="navbar" id="index">
       <ul>
-        <li><b>Unity, C#</b></li>
-        <li>Developed in one week</li>
-        <li>Simple graphics inspired by vaporwave and chillwave</li>
-        <li>6 different enemy types</li>
-        <li>Settings – music, sfx volume</li>
+        <li class="dropdown"><a href="#home"></a></li>
+        <li class="dropdown"><a href="#intro">About Me</a></li>
+        <li class="dropdown">
+          <a href="#university_coursework">University Coursework</a>
+          <div class="dropdown-content">
+            <a href="dissertation.html">Final Year Project</a>
+            <a href="physicsEngine.html">Physics Engine</a>
+            <a href="volcanoScene.html">Volcano Scene</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#personal_projects" class="dropbtn">Personal Projects</a>
+          <div class="dropdown-content">
+            <a href="killerWave.html">KillerWave</a>
+            <a href="itinery.html">Itinery</a>
+            <a href="3_10.html">3/10</a>
+            <a href="3_2_Meow.html">3 2 Meow!</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#contactDetails">Contact Details</a></li>
       </ul>
-  </div>
+    </nav>
 
-  <div class="column">
-    <a href="itinery.html">
-      <div class="imageContainer">
-        <img src="images\itinery.png" alt="">
-        <div class="overlay">
-          <h2>Itinery</h2>
+    <section id="intro">
+      <h1 class="header">About Me</h1>
+
+      <div id="intro_holder">
+        <h3>Hi, I am <span id="text_highlight">David</span>, an indie game developer, <span id="text_highlight">bachelor in Computer Science</span> (Game Engineering with Industrial Placement) and a Full Stack Web Developer. I’ve fallen in love with video games in my childhood and always wanted to create my own.
+        I am <span id="text_highlight">constantly following games industry</span> news, playing and <span id="text_highlight">analysing various game genres</span> to expand my knowledge base and be able to <span id="text_highlight">deliver best ideas</span>.
+        </h3>
+        <h3>I am <span id="text_highlight">always willing to learn</span> and try new things from various fields (be it programming, design, engineering, history or music).</h3>
+        <h3> Here you can see some of the <span id="text_highlight">projects I’ve worked on</span> in my free time or as my university coursework. To see more information about the project <span id="text_highlight">you can click on it.</span></h3>
+        <h3> If you have any questions, <span id="text_highlight">feel free to contact me.</span> </h3>
+      </div>
+    </section>
+
+    <section id="university_coursework">
+      <h1 class="header">University Coursework</h1>
+
+      <div class="row">
+      <div class="column">
+        <a href="dissertation.html">
+          <div class="imageContainer">
+            <img src="images\Dissertation_2D_2.jpg" alt="">
+            <div class="overlay">
+              <h2>City Generation - Final year Project</h2>
+            </div>
+          </div>
+        </a>
+        <p>Final year project that generates a city which considers important factors such as terrain to generate a believable European city.</p>
+        <ul>
+          <li><b>Unity, C#</b></li>
+          <li>Submitted and got high grades for it</li>
+          <li>City is generated with L-Systems</li>
+          <li>Landscape is generated using noise</li>
+          <li>Created without launching Unity’s “play mode” and automatically re-generates if any of the generation properties were edited</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <a href="physicsEngine.html">
+          <div class="imageContainer">
+            <img src="images\Physics_Engine_2.jpg" alt="">
+            <div class="overlay">
+              <h2>Physics Engine</h2>
+            </div>
+          </div>
+        </a>
+        <p>Coursework for a Gaming Simulations module. Created physics engine that has movement based on the Newtonian Dynamics (forces, velocities) and colision detection (sphere/sphere, sphere/box, box/box).</p>
+        <ul>
+          <li><b>C++</b></li>
+          <li>Collision response via impulse calculation</li>
+          <li>Collision resolutions are optimised with a broadphase and narrowphase</li>
+          <li>Introduced additional tricks to optimize performance even more</li>
+          <li>A* Pathfinding</li>
+          <li>AI state machine</li>
+          <li>Flocking</li>
+          <li>Playable!</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <a href="volcanoScene.html">
+          <div class="imageContainer">
+            <img src="images\VolcanoScene.png" alt="">
+            <div class="overlay">
+              <h2>Volcano Eruption Scene</h2>
+            </div>
+          </div>
+        </a>
+        <p>Developed as coursework for the Graphics for Games module. Uses multiple features to create a nicely looking alien planet.</p>
+        <ul>
+          <li><b>Unity, C#</b></li>
+          <li>Custom moving shaders for lava textures</li>
+          <li>Handmade volcano model in Blender3D</li>
+          <li>Use of particle systems for smoke, lava bubbles and burning ashes</li>
+          <li>Use of Unity’s terrain tools for terrain</li>
+          <li>Optimisation techniques to ensure stable 60fps</li>
+          <li>Use of camera and scenes for smooth transit between environments</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    
+    <section id="personal_projects">
+      <h1 class="header">Personal Projects</h1>
+        <div class="row">
+          <div class="column">
+            <a href="killerWave.html">
+              <div class="imageContainer">
+                <img src="images\Vaporwave_design_3.jpg" alt="">
+                <div class="overlay">
+                  <h2>KillerWave</h2>
+                </div>
+              </div>
+            </a>
+              <p>Game submission for a Brackeys Game Jam 2021.1. Two players must cooperate to survive countless enemy waves.</p>
+              <ul>
+                <li><b>Unity, C#</b></li>
+                <li>Developed on my own in less than one week</li>
+                <li>Simple graphics inspired by vaporwave and chillwave</li>
+                <li>6 different enemy types</li>
+                <li>Settings – music, sfx volume</li>
+              </ul>
+          </div>
+
+          <div class="column">
+            <a href="itinery.html">
+              <div class="imageContainer">
+                <img src="images\itinery.png" alt="">
+                <div class="overlay">
+                  <h2>Itinery</h2>
+                </div>
+              </div>
+            </a>
+            <p>This prototype has global map, dialogues, quests and tactical battles with elemental combinations. Paused.</p>
+            <ul>
+              <li><b>Unity, C#</b></li>
+              <li>Everything was drawn by myself – tried pixel art here</li>
+              <li>Originally developed for Android (check the UI)</li>
+              <li>Combat encounter maps can be easily created and modified</li>
+              <li>Entire dialogue system is loaded from a single text file</li>
+              <li>Has save/load system</li>
+              <li>Settings – music, sfx volume</li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <a href="3_10.html">
+              <div class="imageContainer">
+                <img src="images\3_10.jpg" alt="">
+                <div class="overlay">
+                  <h2>3/10</h2>
+                </div>
+              </div>
+            </a>
+            <p>Game where the player makes hard decisions by dragging central square to the left or right.</p>
+            <ul>
+              <li><b>Unity, C#</b></li>
+              <li>Everything was drawn by myself – tried minimalism here</li>
+              <li>Was my first project where I had implemented settings system – sound control, fullscreen and resolution</li>
+              <li>Easily editable dialogues and decision consequences</li>
+              <li>Slavic fairy tales atmosphere</li>
+            </ul>
+          </div>
+
+        <div class="column">
+          <a href="3_2_Meow.html">
+            <div class="imageContainer">
+              <img src="images\32Meow.jpg" alt="">
+              <div class="overlay">
+                <h2>3 2 Meow!</h2>
+              </div>
+            </div>
+          </a>
+          <p>First game that I have <span id="text_highlight">released in Google Play Store</span>. Rock, paper, scissors v2.0</p>
+          <ul>
+            <li><b>Unity, C#</b></li>
+            <li>Everything was drawn by myself - over 300 unique items</li>
+            <li>5 unique classes</li>
+            <li>Adaptive enemy AI</li>
+            <li>Easy to learn - hard to master game philosophy</li>
+            <li>Created Custom Inventory and Localisation Systems</li>
+            <li>Integrated Google Play Store Services & Ads</li>
+          </ul>
         </div>
       </div>
-    </a>
-    <div class="textContainer">
-      <p>This prototype has global map, dialogues, quests and tactical battles with elemental combinations. Currently is on pause due to university coursework.</p>
-      <ul>
-        <li><b>Unity, C#</b></li>
-        <li>Everything was drawn by myself – tried pixel art here</li>
-        <li>Originally developed for Android (check the UI)</li>
-        <li>Combat encounter maps can be easily created and modified</li>
-        <li>Entire dialogue system is loaded from a single text file</li>
-        <li>Has save/load system</li>
-        <li>Settings – music, sfx volume</li>
-      </ul>
-    </div>
+    </section>
 
-  </div>
-
-  <div class="column">
-    <a href="3_10.html">
-      <div class="imageContainer">
-      <img src="images\3_10.jpg" alt="">
-      <div class="overlay">
-        <h2>3/10</h2>
+    <section id="details">
+      <div id="contactDetails">
+        <h1>Contact Details</h1>
+        <h4>david.smirnov998@gmail.com</h4>
+        <a href="https://www.linkedin.com/in/david-smirnov-798ab5151/">
+          <div>
+            <img id="linkedinLogo" src="images\lin.png" alt="linkedin logo">
+            <span>My Linkedin</span>
+          </div>
+        </a>
+        <a href="https://github.com/Fenx93">
+          <div>
+            <img id="linkedinLogo" src="images\github.png" alt="github logo">
+            <span>My GitHub</span>
+          </div>
+        </a>
+        <h4>+447849207142</h4>
       </div>
-    </div>
-    </a>
-    <div class="textContainer">
-      <p>Game where the player makes hard decisions by dragging central square to the left or right.</p>
-      <ul>
-        <li><b>Unity, C#</b></li>
-        <li>Everything was drawn by myself – tried minimalism here</li>
-        <li>Was my first project where I had implemented settings system – sound control, fullscreen and resolution</li>
-        <li>Easily editable dialogues and decision consequences</li>
-        <li>Slavic fairy tales atmosphere</li>
-      </ul>
-    </div>
+    </section>
   </div>
-
-  <div class="column">
-    <a href="3_2_Meow.html">
-      <div class="imageContainer">
-      <img src="images\32Meow.jpg" alt="">
-      <div class="overlay">
-        <h2>3..2..Meow!</h2>
-      </div>
-    </div>
-    </a>
-    <div class="textContainer">
-      <p>Game where the player makes hard decisions by dragging central square to the left or right.</p>
-      <ul>
-        <li><b>Unity, C#</b></li>
-        <li>In Pre-Release state at the moment</li>
-        <li>Everything was drawn by myself - over 300 unique items</li>
-        <li>Easy to learn - hard to master game philosophy</li>
-        <li>Created Custom Inventory System</li>
-        <li>Created Custom Localisation System</li>
-        <li>Integrated Google's Play Store Services</li>
-        <li>Cute cats :)</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-  <div id="contactDetails">
-    <h1>Contact Details</h1>
-    <h4>david.smirnov998@gmail.com</h4>
-    <a href="https://www.linkedin.com/in/david-smirnov-798ab5151/">
-      <div>
-        <img id="linkedinLogo" src="images\lin.png" alt="linkedin logo">
-        <span>My Linkedin</span>
-      </div>
-    </a>
-    <a href="https://github.com/Fenx93">
-      <div>
-        <img id="linkedinLogo" src="images\github.png" alt="github logo">
-        <span>My GitHub</span>
-      </div>
-    </a>
-    <h4>+447849207142</h4>
-  </div>
-
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
