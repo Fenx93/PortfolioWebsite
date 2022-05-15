@@ -7,7 +7,8 @@ body {
   font-family: 'Tisa Sans Pro';
   color: white;
   height: 100vh;
-  line-height: 1.6;
+  line-height: 1.25;
+  font-size: 1.25rem;
 } 
 
 .container{
@@ -53,7 +54,6 @@ body {
 }
 
 .navbar ul li b {
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -120,9 +120,10 @@ section {
 }
 
 section h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #5c821a;
   margin-bottom: 2.5%;
+  margin-top: 2.5%;
   padding: 1%;
   padding-left: 5%;
   padding-right: 5%;
@@ -134,6 +135,7 @@ section h1 {
   margin: 2%;
   margin-left: 10%;
   margin-right: 10%;
+  line-height: 1.6;
 }
 
 /* highlight text using span*/
@@ -148,12 +150,15 @@ section h1 {
   text-align: left;
 }
 
-.column > p {
+.column p {
   margin: 2.5%;
+  font-size: 1.2rem;
 }
 
-.column > ul {
+.column ul {
   margin-left: 10%;
+  font-size: 1.1rem;
+  opacity: 75%;
 }
 
 /* Project image*/
